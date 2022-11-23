@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container-tela {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-forca {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+.container-forca h1 {
+  position: absolute;
+  top: 350px;
+  right: 0;
+}
+
+.container-forca img {
+  width: 400px;
+  height: 466px;
+  margin-left: 50px;
+}
+.container-forca button {
+  width: 200px;
+  height: 60px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.container-forca button:hover {
+  opacity: 0.8;
+}
+
+.container-letras {
+  width: 750px;
+  margin-top: 100px;
+}
+
+.container-letras button {
+  width: 40px;
+  height: 40px;
+  background-color: #e1ecf4;
+  color: #39739d;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #7aa7c7;
+  margin: 8px;
+}
+.container-letras button:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 650px;
+  margin-top: 60px;
+}
+.container-input span {
+  font-weight: 400;
+  font-size: 20px;
+}
+.container-input input {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  width: 353px;
+  height: 40px;
+  box-shadow: 2px 2px 5px 0px #00000040;
+}
+
+.container-input button {
+  width: 100px;
+  height: 40px;
+  background-color: #e1ecf4;
+  color: #7aa7c7;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #7aa7c7;
+  border-radius: 3px;
+}
+.container-input button:hover {
+  opacity: 0.8;
+}
