@@ -36,24 +36,48 @@ const alfabeto = [
   "y",
   "z",
 ];
+const imagens = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
 
 function App() {
+  const [desabilitarInput, setDesabilitarInput] = useState(true);
+  const [erros, setErros] = useState(0);
+  const [palavraEscolhida, setPalavraEscolhida] = useState([]);
+  const [palavra, setPalavra] = useState([]);
+
+  function iniciarJogo() {
+    setDesabilitarInput(false);
+    sortearPalavra();
+  }
+
+  function sortearPalavra() {
+    const indice = Math.floor(Math.random() * palavras.length);
+    const palavra = palavras[indice];
+    const arrayPalavra = palavra.split("");
+    setPalavraEscolhida(arrayPalavra);
+    let traco = [];
+    arrayPalavra.forEach((letra) => traco.push(" _"))
+    setPalavra(traco);
+
+  }
+
   return (
     <div className="container-tela">
       <div className="container-forca">
-        <img src={forca0} alt="forca0" />
-        <button>Escolher palavra</button>
-        <h1>Banana</h1>
+        <img src={imagens[erros]} alt="imagem da forca" />
+        <button onClick={iniciarJogo}>Escolher palavra</button>
+        <h1>{palavra}</h1>
       </div>
 
       <div className="container-letras">
         {alfabeto.map((letra) => (
-          <button>{letra.toUpperCase()}</button>
+          <button key={letra}>
+            {letra.toUpperCase()}
+          </button>
         ))}
       </div>
       <div className="container-input">
         <span>Já sei a palavra!</span>
-        <input />
+        <input disabled={desabilitarInput} />
         <button>Chutar</button>
       </div>
     </div>

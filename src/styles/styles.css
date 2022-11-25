@@ -58,11 +58,6 @@
   border: 1px solid #7aa7c7;
   margin: 8px;
 }
-.container-letras button:hover {
-  opacity: 0.8;
-  transition: all 0.3s;
-}
-
 .container-input {
   display: flex;
   justify-content: space-between;
