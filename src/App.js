@@ -123,6 +123,7 @@ function App() {
     finalizarJogo();
   }
 
+
   return (
     <ContainerTela>
       <ContainerForca>
@@ -257,13 +258,5 @@ const ContainerInput = styled.div`
       opacity: 0.8;
     }
   }
-  .preto {
-    color: #000;
-  }
-  .vermelho {
-    color: #f00;
-  }
-  .verde {
-    color: #27ae60;
-  }
+
 `;
