@@ -58,6 +58,11 @@
   border: 1px solid #7aa7c7;
   margin: 8px;
 }
+.container-letras button:disabled {
+  background-color: #9FAAB5;
+  color: #798A9F;
+  border: 1px solid #7AA7C7;
+}
 .container-input {
   display: flex;
   justify-content: space-between;
@@ -89,4 +94,13 @@
 }
 .container-input button:hover {
   opacity: 0.8;
+}
+.preto {
+  color: #000;
+}
+.vermelho {
+  color: #f00;
+}
+.verde {
+  color: #27AE60;
 }
